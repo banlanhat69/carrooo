@@ -1,0 +1,58 @@
+void vebang()
+{
+	GoTo(2, 1);
+	// ve khung tren
+	cout << char(201);
+	for (x = 3; x < 66; x++) {
+		GoTo(x, 1);
+		cout << char(205);
+	}
+	cout << char(187);
+	for (x = 6; x < 66; x+=4) {
+		GoTo(x, 1);
+		cout << char(203);
+	}
+	// ve hang
+	for (y = 2; y <= 33; y++) {
+		GoTo(2, y);
+		for (x = 2; x <= 66; x += 4) {
+			GoTo(x, y);
+			cout << char(186);
+		}
+	}
+	// ve khung duoi
+	GoTo(2, 33); cout << char(200);
+	for (x = 3; x < 66; x ++) {
+			GoTo(x, 33);
+			cout << char(205);
+		}
+	cout << char(188);
+	for (x = 6; x < 66; x += 4) {
+			GoTo(x, 33);
+			cout << char(202);
+		}
+	// ve ben trong
+	for (y = 3; y <= 32; y+=2) {
+		GoTo(2, y);
+		for (x = 2; x < 66; x ++) {
+			GoTo(x, y);
+			cout << char(205);
+		}
+	}
+
+	for (y = 3; y <= 32; y+=2) {
+		GoTo(2, y);
+		for (x = 6; x < 66; x += 4) {
+			GoTo(x, y);
+			cout << char(206);
+		}
+	}
+	for (y = 3; y < 33; y += 2) {
+		GoTo(2, y);
+		cout << char(204);
+	}
+	for (y = 3; y < 33; y += 2) {
+		GoTo(66, y);
+		cout << char(185);
+	}
+}
