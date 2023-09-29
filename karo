@@ -1,3 +1,4 @@
+#define D char(219)
 void set_color(int code) {
 	HANDLE color = GetStdHandle(STD_OUTPUT_HANDLE);
 	SetConsoleTextAttribute(color, code);
